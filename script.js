@@ -11,13 +11,12 @@ function togglePricing(){
         let annual = price.getAttribute("data-annual");
         if(showMonthly){
 
-            //price.innerHTML = monthly+ "$/mon";
-            const annualPrice = price.getAttribute('data-annual');
+    
+            let annualPrice = price.getAttribute('data-annual');
         price.innerHTML = annualPrice + '$<span>/year</span>';
         }
         else{
-             //price.innerHTML = annual + "$/year";
-              const monthlyPrice = price.getAttribute('data-monthly');
+              let monthlyPrice = price.getAttribute('data-monthly');
         price.innerHTML = monthlyPrice + '$<span>/mon</span>';
         }
         
