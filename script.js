@@ -10,8 +10,6 @@ function togglePricing(){
         let monthly = price.getAttribute("data-monthly");
         let annual = price.getAttribute("data-annual");
         if(showMonthly){
-
-    
             let annualPrice = price.getAttribute('data-annual');
         price.innerHTML = annualPrice + '$<span>/year</span>';
         }
